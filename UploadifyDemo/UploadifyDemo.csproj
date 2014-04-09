@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F3C21DF-1873-4566-9639-429164F52C05}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UploadifyDemo</RootNamespace>
+    <AssemblyName>UploadifyDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Demo.aspx" />
+    <Content Include="ModelDialog.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery\jquery.json-2.4.js" />
+    <Content Include="Scripts\lhgdialog\lhgcore.lhgdialog.min.js" />
+    <Content Include="Scripts\lhgdialog\lhgdialog.js" />
+    <Content Include="Scripts\lhgdialog\lhgdialog.min.js" />
+    <Content Include="Scripts\lhgdialog\lhgdialog文件夹中文件目录结构说明.txt" />
+    <Content Include="Scripts\lhgdialog\skins\blue.css" />
+    <Content Include="Scripts\lhgdialog\skins\blue\blue_s.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\blue_s2.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\blue_titbtn.gif" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_b.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_l.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_lb.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_lt.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_lt2.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_r.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_rb.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_rt.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_rt2.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_t.png" />
+    <Content Include="Scripts\lhgdialog\skins\blue\ie6\ui_t2.png" />
+    <Content Include="Scripts\lhgdialog\skins\chrome.css" />
+    <Content Include="Scripts\lhgdialog\skins\chrome\chrome_s.gif" />
+    <Content Include="Scripts\lhgdialog\skins\chrome\chrome_s2.gif" />
+    <Content Include="Scripts\lhgdialog\skins\chrome\chrome_s3.gif" />
+    <Content Include="Scripts\lhgdialog\skins\default.css" />
+    <Content Include="Scripts\lhgdialog\skins\discuz.css" />
+    <Content Include="Scripts\lhgdialog\skins\iblack.css" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\iblack_s.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\iblack_s2.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_b.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_l.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_lb.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_lt.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_lt2.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_r.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_rb.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_rt.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_rt2.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_t.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblack\ie6\ui_t2.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue.css" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\iblue_s.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\iblue_s2.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_b.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_l.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_lb.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_lt.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_lt2.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_r.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_rb.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_rt.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_rt2.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_t.png" />
+    <Content Include="Scripts\lhgdialog\skins\iblue\ie6\ui_t2.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\32X32\fail.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\32X32\hits.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\32X32\i.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\32X32\succ.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\alert.gif" />
+    <Content Include="Scripts\lhgdialog\skins\icons\confirm.gif" />
+    <Content Include="Scripts\lhgdialog\skins\icons\discuz_bg.gif" />
+    <Content Include="Scripts\lhgdialog\skins\icons\error.gif" />
+    <Content Include="Scripts\lhgdialog\skins\icons\face-sad.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\face-smile.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\gb_tip_layer.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\gb_tip_layer_ie6.png" />
+    <Content Include="Scripts\lhgdialog\skins\icons\lhgcore.gif" />
+    <Content Include="Scripts\lhgdialog\skins\icons\loading.gif" />
+    <Content Include="Scripts\lhgdialog\skins\icons\prompt.gif" />
+    <Content Include="Scripts\lhgdialog\skins\icons\success.gif" />
+    <Content Include="Scripts\lhgdialog\skins\icons\tips.gif" />
+    <Content Include="Scripts\lhgdialog\skins\idialog.css" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\idialog_s.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\idialog_s2.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_b.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_close.hover.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_close.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_l.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_lb.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_lt.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_r.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_rb.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_rt.png" />
+    <Content Include="Scripts\lhgdialog\skins\idialog\ie6\ui_t.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen.css" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\ie6\ui_b.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\ie6\ui_l.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\ie6\ui_lb.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\ie6\ui_lt.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\ie6\ui_r.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\ie6\ui_rb.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\ie6\ui_rt.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\ie6\ui_t.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\igreen_s.png" />
+    <Content Include="Scripts\lhgdialog\skins\igreen\igreen_s2.png" />
+    <Content Include="Scripts\lhgdialog\skins\jtop.css" />
+    <Content Include="Scripts\lhgdialog\skins\mac.css" />
+    <Content Include="Scripts\syspub.js" />
+    <Content Include="Scripts\uploadify\Change Log.txt" />
+    <Content Include="Scripts\uploadify\jquery.uploadify.js" />
+    <Content Include="Scripts\uploadify\license.txt" />
+    <Content Include="Scripts\uploadify\uploadify-cancel.png" />
+    <Content Include="Scripts\uploadify\uploadify.css" />
+    <Content Include="Scripts\uploadify\uploadify.swf" />
+    <Content Include="Scripts\uploadify\__MACOSX\._Change Log.txt" />
+    <Content Include="Scripts\uploadify\__MACOSX\._uploadify.swf" />
+    <Content Include="Scripts\viewAnalysis.js" />
+    <Content Include="Uploadify\FileUploader.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDialog.aspx.cs">
+      <DependentUpon>ModelDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelDialog.aspx.designer.cs">
+      <DependentUpon>ModelDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uploadify\FileUploader.aspx.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uploadify\FileUploader.aspx.designer.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uploadify\UploadHandler.ashx.cs">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAnalysis.ashx.cs">
+      <DependentUpon>ViewAnalysis.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Uploadify\UploadHandler.ashx" />
+    <Content Include="Scripts\uploadify\check-exists.php" />
+    <Content Include="Scripts\uploadify\index.php" />
+    <Content Include="Scripts\uploadify\uploadify.php" />
+    <Content Include="ViewAnalysis.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56466</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
